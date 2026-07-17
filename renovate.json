@@ -19,7 +19,14 @@
       "groupName": "go dependencies"
     },
     {
+      "description": "Digest pinning PRs for GitHub Actions (separate from version bumps)",
       "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["pin", "pinDigest"],
+      "groupName": "pin github actions"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["major", "minor", "patch", "digest"],
       "groupName": "github actions"
     },
     {
